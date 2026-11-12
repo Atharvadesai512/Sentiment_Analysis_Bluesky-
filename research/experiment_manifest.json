@@ -1,0 +1,24 @@
+{
+  "python": "3.12.7",
+  "source_sha256": {
+    "data/bilstm_train.csv": "7cb3a80768be165e7aa0286b2cc7d5fc3cf5354b5659334c07017148495f383f",
+    "data/bilstm_validation.csv": "66e4811a81f8d3ea033c42eb29a84124cd7e796edafcc6a4b41c979abe511d5a",
+    "data/bilstm_test.csv": "12ced5dc67c69b723777c7953b4ca5076fdd28b5adeeb4ab18d85b201c2024a9",
+    "data/bilstm_test_results.csv": "d57843e248619e6afcb936563c419b0ee846add99227a82b34666b2827574b60",
+    "data/cleaned_posts.csv": "d5d9b15277e38979ea3e31d1def40b7884b9626d72c949837c773ecdd8a35cb2",
+    "data/collection_coverage.csv": "7926f9eceb8e71c778fe2866af29db95eb8c6c802e3a13e77f3b8429741f49ce",
+    "models/bilstm_model.keras": "86faeb1932848758cd4bbaece0f4e57b93ff8c75f7bd88698d4a6814e5c85382"
+  },
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "2.2.2",
+    "torch": "2.4.1",
+    "transformers": "4.44.2",
+    "scikit-learn": "1.9.1",
+    "vaderSentiment": "3.3.2",
+    "tensorflow": "2.21.0",
+    "matplotlib": "3.10.8"
+  },
+  "dataset_source": "sentiment/bilstm_model.py imports cardiffnlp/tweet_eval sentiment; local cache revision b3a375baf0f409c77e6bc7aa35102b7b3534f8be",
+  "model_comparison": "Off-the-shelf RoBERTa and VADER versus locally trained BiLSTM and TF-IDF; training budgets and pretraining data are not matched."
+}

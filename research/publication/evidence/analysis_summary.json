@@ -1,0 +1,33 @@
+{
+  "quantification_protocol": {
+    "half_sizes": [
+      6141,
+      6143
+    ],
+    "prevalence_grid_points": 66,
+    "repeats": 30,
+    "primary_bag_size": 500,
+    "primary_direction": 0,
+    "seed_split": 42,
+    "sampling": "With replacement within true class; identical bags for every method; grid equally weighted",
+    "calibration": "Half of the original test rows calibrate confusion; the disjoint half supplies bags. Reverse-direction sensitivity at n=500. Base classifiers unchanged.",
+    "scope": "Retrospective secondary diagnostic on a previously inspected test set; not a new independent benchmark or target-domain correction.",
+    "matrices_orientation": "rows predicted class, columns true class; order negative, neutral, positive"
+  },
+  "historical": {
+    "posts": 127741,
+    "authors": 57561,
+    "unique_normalized_texts": 121111,
+    "author_days": 87823,
+    "top_one_percent_authors_post_share": 0.24440860804283668,
+    "daily_equal_weight_vader_minus_roberta": 0.3454807086688788,
+    "day_resampling_95_interval": [
+      0.33287750530669874,
+      0.35963359802766615
+    ],
+    "daily_positive_difference_count": 14,
+    "days": 14,
+    "interval_scope": "10000 resamples of 14 observed day means; seed42; assumes exchangeable days; descriptive, not population inference or classification-correctness uncertainty."
+  },
+  "script_sha256": "6af1f30630b5b89b26124dc163f6ba830d6095a2fc5d35660c79fe617e5163b2"
+}

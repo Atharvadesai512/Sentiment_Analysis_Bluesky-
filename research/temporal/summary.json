@@ -1,0 +1,131 @@
+{
+  "15min": {
+    "periods": 1344,
+    "periods_with_cap_hits": 194,
+    "fully_observed_uncapped_periods": 1150,
+    "comparisons": [
+      {
+        "models": [
+          "VADER",
+          "RoBERTa"
+        ],
+        "paired_periods": 1344,
+        "pearson_correlation": 0.41490403437937745,
+        "mean_absolute_difference": 0.3459153097496618,
+        "opposite_sign_periods": 1114,
+        "uncapped_paired_periods": 1150,
+        "uncapped_mean_absolute_difference": 0.34740598350187346
+      },
+      {
+        "models": [
+          "VADER",
+          "BiLSTM"
+        ],
+        "paired_periods": 1344,
+        "pearson_correlation": 0.36368382691154955,
+        "mean_absolute_difference": 0.128395813216759,
+        "opposite_sign_periods": 678,
+        "uncapped_paired_periods": 1150,
+        "uncapped_mean_absolute_difference": 0.1294003031051533
+      },
+      {
+        "models": [
+          "RoBERTa",
+          "BiLSTM"
+        ],
+        "paired_periods": 1344,
+        "pearson_correlation": 0.4880893214384795,
+        "mean_absolute_difference": 0.2271294732775734,
+        "opposite_sign_periods": 454,
+        "uncapped_paired_periods": 1150,
+        "uncapped_mean_absolute_difference": 0.22752011093465677
+      }
+    ]
+  },
+  "h": {
+    "periods": 336,
+    "periods_with_cap_hits": 153,
+    "fully_observed_uncapped_periods": 183,
+    "comparisons": [
+      {
+        "models": [
+          "VADER",
+          "RoBERTa"
+        ],
+        "paired_periods": 336,
+        "pearson_correlation": 0.4601906145552824,
+        "mean_absolute_difference": 0.3456723153510446,
+        "opposite_sign_periods": 327,
+        "uncapped_paired_periods": 183,
+        "uncapped_mean_absolute_difference": 0.35145838069517354
+      },
+      {
+        "models": [
+          "VADER",
+          "BiLSTM"
+        ],
+        "paired_periods": 336,
+        "pearson_correlation": 0.3896743760709693,
+        "mean_absolute_difference": 0.11877635695474338,
+        "opposite_sign_periods": 241,
+        "uncapped_paired_periods": 183,
+        "uncapped_mean_absolute_difference": 0.1228775766876269
+      },
+      {
+        "models": [
+          "RoBERTa",
+          "BiLSTM"
+        ],
+        "paired_periods": 336,
+        "pearson_correlation": 0.5896874710900533,
+        "mean_absolute_difference": 0.22712918324464587,
+        "opposite_sign_periods": 77,
+        "uncapped_paired_periods": 183,
+        "uncapped_mean_absolute_difference": 0.22886818298660402
+      }
+    ]
+  },
+  "D": {
+    "periods": 14,
+    "periods_with_cap_hits": 14,
+    "fully_observed_uncapped_periods": 0,
+    "comparisons": [
+      {
+        "models": [
+          "VADER",
+          "RoBERTa"
+        ],
+        "paired_periods": 14,
+        "pearson_correlation": 0.12086882415910921,
+        "mean_absolute_difference": 0.3454807086688788,
+        "opposite_sign_periods": 14,
+        "uncapped_paired_periods": 0,
+        "uncapped_mean_absolute_difference": null
+      },
+      {
+        "models": [
+          "VADER",
+          "BiLSTM"
+        ],
+        "paired_periods": 14,
+        "pearson_correlation": 0.18005663246809656,
+        "mean_absolute_difference": 0.11856760698791377,
+        "opposite_sign_periods": 14,
+        "uncapped_paired_periods": 0,
+        "uncapped_mean_absolute_difference": null
+      },
+      {
+        "models": [
+          "RoBERTa",
+          "BiLSTM"
+        ],
+        "paired_periods": 14,
+        "pearson_correlation": 0.692377563960177,
+        "mean_absolute_difference": 0.22691310168096507,
+        "opposite_sign_periods": 0,
+        "uncapped_paired_periods": 0,
+        "uncapped_mean_absolute_difference": null
+      }
+    ]
+  }
+}

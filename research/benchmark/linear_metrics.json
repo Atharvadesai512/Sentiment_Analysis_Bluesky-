@@ -1,0 +1,66 @@
+{
+  "model": "linear",
+  "rows": 12284,
+  "test_sha256": "12ced5dc67c69b723777c7953b4ca5076fdd28b5adeeb4ab18d85b201c2024a9",
+  "python": "3.12.7",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "metadata": {
+    "training": "Local training split only; fixed baseline settings"
+  },
+  "timing": {
+    "elapsed_seconds": 0.1979904999025166,
+    "posts_per_second": 62043.38089983206
+  },
+  "timing_scope": "Single offline pass, excluding initialization; not streaming latency or a controlled speed comparison",
+  "report": {
+    "negative": {
+      "precision": 0.685031185031185,
+      "recall": 0.33182275931520644,
+      "f1-score": 0.4470827679782904,
+      "support": 3972.0
+    },
+    "neutral": {
+      "precision": 0.5891037366083094,
+      "recall": 0.7594744820616472,
+      "f1-score": 0.6635273342653226,
+      "support": 5937.0
+    },
+    "positive": {
+      "precision": 0.5351071692535108,
+      "recall": 0.6096842105263158,
+      "f1-score": 0.5699665420192875,
+      "support": 2375.0
+    },
+    "accuracy": 0.5922338000651254,
+    "macro avg": {
+      "precision": 0.6030806969643351,
+      "recall": 0.5669938173010565,
+      "f1-score": 0.5601922147543003,
+      "support": 12284.0
+    },
+    "weighted avg": {
+      "precision": 0.6096818852299323,
+      "recall": 0.5922338000651254,
+      "f1-score": 0.5754514063203189,
+      "support": 12284.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      1318,
+      2287,
+      367
+    ],
+    [
+      537,
+      4509,
+      891
+    ],
+    [
+      69,
+      858,
+      1448
+    ]
+  ],
+  "train_majority_baseline_accuracy": 0.4833116248778899
+}

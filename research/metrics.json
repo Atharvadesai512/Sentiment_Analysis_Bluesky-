@@ -1,0 +1,114 @@
+{
+  "label_order": [
+    "negative",
+    "neutral",
+    "positive"
+  ],
+  "historical": {
+    "raw_rows": 129159,
+    "cleaned_rows": 127741,
+    "first_post_utc": "2026-10-19T00:06:21.642000+00:00",
+    "last_post_utc": "2026-11-01T23:59:53.286000+00:00",
+    "window_start_utc": "2026-10-19T00:00:00+00:00",
+    "window_end_exclusive_utc": "2026-11-02T00:00:00+00:00",
+    "windows": 1344,
+    "successful_windows": 1344,
+    "possibly_truncated_windows": 194,
+    "class_counts": {
+      "VADER": {
+        "negative": 41765,
+        "neutral": 31790,
+        "positive": 54186
+      },
+      "RoBERTa": {
+        "negative": 46314,
+        "neutral": 66819,
+        "positive": 14608
+      },
+      "BiLSTM": {
+        "negative": 20349,
+        "neutral": 89768,
+        "positive": 17624
+      }
+    },
+    "pairwise_agreement": [
+      {
+        "models": [
+          "VADER",
+          "RoBERTa"
+        ],
+        "agreement": 0.5001839659936903,
+        "cohen_kappa": 0.28879761350909056
+      },
+      {
+        "models": [
+          "VADER",
+          "BiLSTM"
+        ],
+        "agreement": 0.4346451021989807,
+        "cohen_kappa": 0.20875046940403166
+      },
+      {
+        "models": [
+          "RoBERTa",
+          "BiLSTM"
+        ],
+        "agreement": 0.6531419043220266,
+        "cohen_kappa": 0.37936851164298835
+      }
+    ],
+    "all_three_agree": 42830
+  },
+  "bilstm_labeled_test": {
+    "rows": 12284,
+    "majority_baseline_accuracy": 0.4833116248778899,
+    "metrics": {
+      "negative": {
+        "precision": 0.6850477200424178,
+        "recall": 0.3252769385699899,
+        "f1-score": 0.4411061795834756,
+        "support": 3972
+      },
+      "neutral": {
+        "precision": 0.5807811531308121,
+        "recall": 0.7889506484756611,
+        "f1-score": 0.6690472789601486,
+        "support": 5937
+      },
+      "positive": {
+        "precision": 0.5696528075439349,
+        "recall": 0.5595789473684211,
+        "f1-score": 0.564570943075616,
+        "support": 2375
+      },
+      "accuracy": 0.5946760013025073,
+      "macro avg": {
+        "precision": 0.6118272269057216,
+        "recall": 0.5579355114713573,
+        "f1-score": 0.5582414672064134
+      }
+    },
+    "confusion_matrix": [
+      [
+        1292,
+        2397,
+        283
+      ],
+      [
+        532,
+        4684,
+        721
+      ],
+      [
+        62,
+        984,
+        1329
+      ]
+    ]
+  },
+  "human_evaluation": {
+    "sample_size": 300,
+    "labeled_rows": 0,
+    "models": {}
+  }
+}

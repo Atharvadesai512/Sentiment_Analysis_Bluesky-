@@ -1,0 +1,27 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+.cache/
+.chart-data-*/
+
+# Raw social-media records, local databases and trained model artefacts are not
+# published. Recreate them locally only when their licences and privacy terms
+# permit it.
+data/*.db
+data/*.csv
+data/backups/
+models/
+logs/
+
+# Local render previews and duplicated submission-package contents.
+research/presentation_build/
+research/format_review/
+research/submission/qa/
+research/submission/Evidence/
+research/submission/Source/
+research/Submission Package.zip
+research/submission/PACKAGE MANIFEST.json
+research/Bluesky Sentiment Research Paper.docx
+research/Dissertation and Research Completion Plan.docx
+research/publication/template/

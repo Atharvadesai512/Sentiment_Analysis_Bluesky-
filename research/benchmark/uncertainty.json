@@ -1,0 +1,140 @@
+{
+  "method": "1000 paired row-bootstrap resamples; percentile 95% intervals; seed 42",
+  "limitation": "Assumes independent rows; author and temporal clustering are not represented",
+  "models": {
+    "vader": {
+      "accuracy": {
+        "score": 0.5300390752197981,
+        "lower": 0.5214913708889612,
+        "upper": 0.5393214750895474
+      },
+      "macro_f1": {
+        "score": 0.5288205878171011,
+        "lower": 0.5203338333123778,
+        "upper": 0.5380538079161119
+      }
+    },
+    "linear": {
+      "accuracy": {
+        "score": 0.5922338000651254,
+        "lower": 0.5836779550634973,
+        "upper": 0.6010379355258872
+      },
+      "macro_f1": {
+        "score": 0.5601922147543003,
+        "lower": 0.5508958033141812,
+        "upper": 0.5702576681594519
+      }
+    },
+    "bilstm_saved": {
+      "accuracy": {
+        "score": 0.5946760013025073,
+        "lower": 0.5861262618039726,
+        "upper": 0.6036307391729079
+      },
+      "macro_f1": {
+        "score": 0.5582414672064133,
+        "lower": 0.5489180620479541,
+        "upper": 0.5681661637475988
+      }
+    },
+    "roberta": {
+      "accuracy": {
+        "score": 0.7218332790621947,
+        "lower": 0.7137740149788343,
+        "upper": 0.7294855096059916
+      },
+      "macro_f1": {
+        "score": 0.7240497134269231,
+        "lower": 0.7157998774900224,
+        "upper": 0.7318226091411324
+      }
+    }
+  },
+  "paired_differences": [
+    {
+      "left_minus_right": [
+        "vader",
+        "linear"
+      ],
+      "accuracy_95_interval": [
+        -0.07359573428850542,
+        -0.04990231195050476
+      ],
+      "macro_f1_95_interval": [
+        -0.04301980566406571,
+        -0.01929521036750187
+      ]
+    },
+    {
+      "left_minus_right": [
+        "vader",
+        "bilstm_saved"
+      ],
+      "accuracy_95_interval": [
+        -0.07611527189840439,
+        -0.05364498534679251
+      ],
+      "macro_f1_95_interval": [
+        -0.04114033961317923,
+        -0.017939328814316542
+      ]
+    },
+    {
+      "left_minus_right": [
+        "vader",
+        "roberta"
+      ],
+      "accuracy_95_interval": [
+        -0.20172582220774993,
+        -0.18145555193747964
+      ],
+      "macro_f1_95_interval": [
+        -0.2049878978933864,
+        -0.18507765237878182
+      ]
+    },
+    {
+      "left_minus_right": [
+        "linear",
+        "bilstm_saved"
+      ],
+      "accuracy_95_interval": [
+        -0.009119586453923861,
+        0.004155812438945036
+      ],
+      "macro_f1_95_interval": [
+        -0.005722614454013656,
+        0.009559980930276862
+      ]
+    },
+    {
+      "left_minus_right": [
+        "linear",
+        "roberta"
+      ],
+      "accuracy_95_interval": [
+        -0.13969798111364373,
+        -0.11860957342885059
+      ],
+      "macro_f1_95_interval": [
+        -0.1742541087328092,
+        -0.15316373493479812
+      ]
+    },
+    {
+      "left_minus_right": [
+        "bilstm_saved",
+        "roberta"
+      ],
+      "accuracy_95_interval": [
+        -0.1377401497883426,
+        -0.11657237056333447
+      ],
+      "macro_f1_95_interval": [
+        -0.17615236331501144,
+        -0.15493080616316293
+      ]
+    }
+  ]
+}
