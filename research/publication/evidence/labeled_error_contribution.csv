@@ -1,0 +1,37 @@
+model,true_label,predicted_label,posts,score_delta,contribution_to_mean_net_error
+VADER,negative,negative,2222,0,0.0
+VADER,negative,neutral,724,1,0.058938456528817976
+VADER,negative,positive,1026,2,0.16704656463692608
+VADER,neutral,negative,1283,-1,-0.10444480625203517
+VADER,neutral,neutral,2594,0,0.0
+VADER,neutral,positive,2060,1,0.16769781830022795
+VADER,positive,negative,156,-2,-0.025398892868772387
+VADER,positive,neutral,524,-1,-0.04265711494627157
+VADER,positive,positive,1695,0,0.0
+TF-IDF + LR,negative,negative,1318,0,0.0
+TF-IDF + LR,negative,neutral,2287,1,0.1861771409964181
+TF-IDF + LR,negative,positive,367,2,0.05975252360794529
+TF-IDF + LR,neutral,negative,537,-1,-0.04371540214913709
+TF-IDF + LR,neutral,neutral,4509,0,0.0
+TF-IDF + LR,neutral,positive,891,1,0.07253337675024422
+TF-IDF + LR,positive,negative,69,-2,-0.011234125691957017
+TF-IDF + LR,positive,neutral,858,-1,-0.06984695538912407
+TF-IDF + LR,positive,positive,1448,0,0.0
+BiLSTM,negative,negative,1292,0,0.0
+BiLSTM,negative,neutral,2397,1,0.19513187886681863
+BiLSTM,negative,positive,283,2,0.04607619667860632
+BiLSTM,neutral,negative,532,-1,-0.043308368609573426
+BiLSTM,neutral,neutral,4684,0,0.0
+BiLSTM,neutral,positive,721,1,0.05869423640507978
+BiLSTM,positive,negative,62,-2,-0.010094431781178768
+BiLSTM,positive,neutral,984,-1,-0.0801042005861283
+BiLSTM,positive,positive,1329,0,0.0
+RoBERTa,negative,negative,3204,0,0.0
+RoBERTa,negative,neutral,711,1,0.05788016932595246
+RoBERTa,negative,positive,57,2,0.00928036470205145
+RoBERTa,neutral,negative,1372,-1,-0.11169000325626832
+RoBERTa,neutral,neutral,3904,0,0.0
+RoBERTa,neutral,positive,661,1,0.05380983393031586
+RoBERTa,positive,negative,71,-2,-0.011559752523607945
+RoBERTa,positive,neutral,545,-1,-0.04436665581243895
+RoBERTa,positive,positive,1759,0,0.0

@@ -54,6 +54,22 @@ cleaned corpus by post URI and text. No model downloads are needed.
 The current study uses the existing labeled Twitter benchmark for accuracy,
 and the historical Bluesky corpus for agreement and temporal analysis.
 Manual annotation is optional. Bluesky accuracy remains unmeasured.
+The manuscript states this boundary directly: Bluesky trends are model
+outputs, not verified public opinion. The human sample in
+`data/human_evaluation_sample.csv` has 300 posts and only 2 completed labels.
+
+The M.Sc. diagnostics below recompute how labeled errors shift mean net
+sentiment, list disagreement examples, and repeat the historical trend after
+duplicate-text, uncapped-hour and author-cap filters:
+
+```powershell
+.\venv\Scripts\python.exe sentiment\msc_paper_analysis.py
+.\venv\Scripts\python.exe research\publication\plot_step1.py
+.\venv\Scripts\python.exe research\publication\build_step1_paper.py
+```
+
+Evidence is written to `research/publication/evidence/`. The manuscript is
+`research/publication/manuscript/Step 1 Quantification Manuscript.docx`.
 
 ### Benchmark and temporal experiments
 

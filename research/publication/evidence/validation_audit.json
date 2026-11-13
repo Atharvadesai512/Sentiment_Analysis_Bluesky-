@@ -1,0 +1,12 @@
+{
+  "sample_size": 300,
+  "labeled_posts": 2,
+  "unlabeled_posts": 298,
+  "label_counts": {
+    "positive": 1,
+    "negative": 1
+  },
+  "status": "incomplete",
+  "claim_boundary": "Bluesky aggregate trends in this study are classifier outputs. They are not verified measurements of public opinion, because the target corpus has no completed independent human ground truth.",
+  "minimum_useful_sample": "100 to 200 independently labeled posts, double-annotated on a subset, with texts withheld from the annotator\u2019s view of model outputs."
+}
